@@ -1,0 +1,22 @@
+{
+  "name": "sit725-t2-prac3",
+  "version": "1.0.0",
+  "description": "Bootstrapping Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityabanerjee992/SIT725-t2-prac3.git"
+  },
+  "author": "Aditya Banerjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityabanerjee992/SIT725-t2-prac3/issues"
+  },
+  "homepage": "https://github.com/adityabanerjee992/SIT725-t2-prac3#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
