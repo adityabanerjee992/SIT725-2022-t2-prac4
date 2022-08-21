@@ -31,7 +31,8 @@
         <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac feugiat sem, at porttitor sapien. Suspendisse semper feugiat velit, sit amet fringilla nunc fringilla et. Duis convallis libero faucibus ligula viverra scelerisque vitae in eros. Class aptent </h5>
       </div>
       <div class="row center">
-        <a href="https://github.com/adityabanerjee992" id="download-button" class="btn-large waves-effect waves-light orange">vel rutrum orci</a>
+        <!-- <a href="https://github.com/adityabanerjee992" id="download-button" class="btn-large waves-effect waves-light orange">vel rutrum orci</a> -->
+        <a class="waves-effect waves-light orange btn click-me-button  modal-trigger " id="clickMeButton" data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
       </div>
       <br><br>
 
@@ -112,11 +113,48 @@
     </div>
   </footer>
 
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="row modal-content">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="Placeholder" id="title" type="text" class="validate">
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="image" type="text" class="validate">
+            <label for="image">Image</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="link" type="text" class="validate">
+            <label for="link">Link</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="description" type="text" class="validate">
+            <label for="description">Description</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 center-align">
+            <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
+  </script>
   </body>
 </html>
